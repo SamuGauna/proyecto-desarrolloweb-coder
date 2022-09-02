@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <div>
+            <a href="../index.html">
+               <img class="imgLogoIzq" src="../assets/img/izquierda (3).jpg" alt="Logo izquierda">
+            </a>   
+           </div>
+           <nav>                            
+               <ul>                    
+                   <li>
+                       <a href="bio.html">Bio</a>
+                   </li>
+                   <li>
+                       <a href="opinion.html">Tu opinion</a>
+                   </li>
+                   <li>
+                       <a href="discografia.html">Discografia</a>
+                   </li>
+                   <li>
+                       <a href="galeria.html">Galeria</a>
+                   </li>
+               </ul>
+           </nav>
+           <div>
+               <img class="imgLogoDer" src="../assets/img/derecha2.jpg" alt="logo derecha">
+           </div>
+    </header>
+    <main>
+        <div>
+            <h1>Tu opinion</h1>
+        </div>
+        <article class="textoopinion">
+            <p>Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes!
+            </p>
+        </article>
+        <section>
+            <form action="send.php" method="get"    enctype="multipart/form-data">
+                <h3>Que disco te gusta mas?</h3>
+                <div class="div1">
+                    <input type="radio" name="mejordisco" id="Recovery" />
+                    <label for="Recovery">Recovery</label>
+                    <input type="radio" name="mejordisco" id="Theeminemshow" />
+                    <label for="Theeminemshow">The Eminem Show</label>
+                    <input type="radio" name="mejordisco" id="Relapse" />
+                    <label for="Relapse">Relapse</label>
+                </div>
+                <fieldset class="fieldset">
+                    <legend>Que cancion te gusta mas?</legend>
+                        <select name="" id="">
+                            <option>When im gone</option>
+                            <option>Lose Yourself</option>
+                            <option>Like toy Soldiers</option>
+                        </select>
+                </fieldset>
+                <div class="div2">
+                    <input class="div2__input" type="text" placeholder="Escribe tu nombre" />
+                    <input class="div2__input" type="email" placeholder="Escribe tu email" />
+                    <textarea cols="30" rows="10" placeholder="Danos una breve opinion sobre el sitio web"></textarea>
+                </div>
+                <div class="div3">
+                    <button type="reset">Borrar todo</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6>
+            Aportes de un fan, sitio web sin fines de lucro
+        </h6>
+    </footer>
+</body>
+</html>
