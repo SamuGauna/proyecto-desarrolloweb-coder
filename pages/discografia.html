@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discografía</title>
+    <link rel="shortcut icon" href="../assets/img/ICON.ico">
+    <link rel="shortcut icon" href="./assets/img/derecha2.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header> 
-        <div>
-            <a href="../index.html">
-               <img class="imgLogoIzq" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda">
-            </a>   
-           </div>
-           <nav>                            
-               <ul>                    
-                   <li class="li__nav">
-                       <a href="bio.html">Bio</a>
-                   </li>
-                   <li class="li__nav">
-                       <a href="opinion.html">Tu opinion</a>
-                   </li>
-                   <li class="li__nav">
-                       <a href="discografia.html">Discografia</a>
-                   </li>
-                   <li class="li__nav">
-                       <a href="galeria.html">Galeria</a>
-                   </li>
-               </ul>
-           </nav>
-           <div>
-               <img class="imgLogoDer" src="../assets/img/derecha2.svg" alt="logo derecha">
-           </div>
-    </header>
+    <nav class="navbar bg-light Offcanvas navbarfixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand row" href="../index.html">
+                <img class="imgLogoIzq col-md-1" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda">
+            <!-- <img class="col-md-9 imgLogoDer" src="./assets/img/nav_principal.png" alt=""> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end nav__background__img " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel">EMINEM</h5>
+                    <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold text-white" aria-current="page" href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="opinion.html">Tu opinion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="galeria.html">Galeria</a>
+                        </li>
+                    </ul>                      
+                </div>
+            </div>
+        </div>
+    </nav>
     <main>
         <div>
             <h1>Discografia</h1>
@@ -113,5 +123,6 @@
             Aportes de un fan, sitio web sin fines de lucro
         </h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
 </body>
 </html>

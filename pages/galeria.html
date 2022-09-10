@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+    <link rel="shortcut icon" href="../assets/img/ICON.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,47 +14,54 @@
 </head>
 </head>
 <body>
-    <header> 
-        <div>
-            <a href="../index.html">
-               <img class="imgLogoIzq" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda">
-            </a>   
+    <nav class="navbar bg-light Offcanvas navbarfixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand row" href="../index.html">
+                <img class="imgLogoIzq col-md-1" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda">
+            <!-- <img class="col-md-9 imgLogoDer" src="./assets/img/nav_principal.png" alt=""> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end nav__background__img " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel">EMINEM</h5>
+                    <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold text-white" aria-current="page" href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="opinion.html">Tu opinion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="galeria.html">Galeria</a>
+                        </li>
+                    </ul>                      
+                </div>
+            </div>
         </div>
-        <nav>                            
-            <ul>                    
-                <li class="li__nav">
-                    <a href="bio.html">Bio</a>
-                </li>
-                <li class="li__nav">
-                    <a href="opinion.html">Tu opinion</a>
-                </li>
-                <li class="li__nav">
-                    <a href="discografia.html">Discografia</a>
-                </li>
-                <li class="li__nav">
-                    <a href="galeria.html">Galeria</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <img class="imgLogoDer" src="../assets/img/derecha2.svg" alt="logo derecha">
-        </div>
-    </header>        
+    </nav>
     <main>
         <div>
             <h1>Galeria</h1>       
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../assets/img/6765814.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/6765820.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/1746038.jpg" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="../assets/img/6765814.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/6765820.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/1746038.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
