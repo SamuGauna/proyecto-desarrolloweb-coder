@@ -8,40 +8,39 @@
     grid-template-areas:
     "imagen1 imagen1 texto1 imagen2 imagen2"
     "texto2 texto2 imagen3 imagen3 imagen3";
-    > .img1 {
+    .img1 {
         grid-area: imagen1;
         > .img__12 {
-            width: 350px;
-            height: 350px;
-            border-radius: $fifteen;
-            box-shadow: rgba(220, 82, 82, 0.3) 0px 0px 0px 3px;
+            @extend %imgindex;
         }
     }
-    > .text1 {
+    .text1 {
         grid-area: texto1;
-        font-size: 12px;
+        font-size: $fontsmall;
         text-align: center;
     }
-    > .img2 {
+    .img2 {
         grid-area: imagen2;
+        > .img__12 {
+            @extend %imgindex;
+        }
     }
-    > .text2 {
+    .text2 {
         grid-area: texto2;
         text-align: center;
         margin: 0 50px;
-        > .text2__class {
-            font-size: 17px;
+        .text2__class {
+            font-size: $fontmedium;
         }
     }
-    > .img3 { 
+    .img3 { 
         grid-area: imagen3;
         margin-top: 30px;
-        box-shadow: 0px 0px 80px 10px rgba(255, 255, 255, 0.4);
-        border-radius: $fifteen;
+        @extend %sombra;
         > .img3__class {
             width: 600px;
             height: 350px;
-            border-radius: $fifteen;
+            border-radius: 15px;
         }
     }
 
@@ -51,21 +50,21 @@
     margin: 100px 0;
     display: flex;
     flex-direction: column;
-    > .section2__title {
+    .section2__title {
         text-align: center;
         color: $blank;
-        font-size: 30px;
+        font-size: $fontlarge;
         margin-bottom: 50px;
         -webkit-animation: blur-out-expand 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 	        animation: blur-out-expand 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
             animation-iteration-count: infinite;
             animation-duration: 6s;
     }
-    > .section2__text1 {
+    .section2__text1 {
         .section2__text12 {
             text-align: center;
             padding: 0 100px;
-            font-size: 20px;
+            font-size: $fontmedium;
         }
     }
 }
@@ -102,31 +101,28 @@
     grid-template-areas:
     "imgdisco list"
     "textofinal textofinal";
-    > .section3__img {
+    .section3__img {
         grid-area: imgdisco;
-        box-shadow: 0px 0px 80px 10px rgba(255, 255, 255, 0.4);
-        border-radius: $fifteen;
+        @extend %sombra;
         > .imgsection3 {
-            width: 500px;
-            height: 400px;
-            border-radius: $fifteen;
+            @extend %widheibord;
         }
     }
-    > .section3__spotify {
+    .section3__spotify {
         grid-area: list;
-        > .spotify {
-            border-radius: $fifteen;
-            width: 500px;
-            height: 400px;
+        .spotify {
+            @extend %widheibord;
+            @extend %sombra;
         }
     }
-    > .section3__text {
+    .section3__text {
         grid-area: textofinal;
-        > .parrafoFinal {
+        .parrafoFinal {
             text-align: center;
             padding: 0 100px;
-            font-size: 20px;
+            font-size: $fontmedium;
         }
     }
 }
+
 

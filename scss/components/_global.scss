@@ -7,15 +7,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
     writing-mode: horizontal-tb;
-    font-size: 15px;
     background-image: url("/assets/img/asss.jpg");
     background-position: 50%;
 }
 h1{
-    font-size: 30px;
+    font-size: $fontlarge;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: $blank;
     padding: 50px 60px;
     -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -61,9 +60,9 @@ p{
 
 
 footer h6 {
-    color: #fff;
+    color: $blank;
     font-weight: bold;
-    font-size: 13px;
+    font-size: $fontsmall;
     text-align: end;
     margin: 30px 30px;
 }

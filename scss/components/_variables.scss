@@ -1,2 +1,28 @@
+//colors
+
 $blank: #fff;
-$fifteen: 15px;
+$black: #000;
+
+//extends place holders
+
+%imgindex {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: rgba(220, 82, 82, 0.3) 0px 0px 0px 3px;
+}
+%widheibord {
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+}
+%sombra {
+    box-shadow: 0px 0px 80px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+}
+
+//fonts sizes
+
+$fontsmall: 12px;
+$fontmedium: $fontsmall + 5;
+$fontlarge: $fontsmall + 10;
