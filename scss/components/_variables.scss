@@ -26,3 +26,30 @@ $black: #000;
 $fontsmall: 12px;
 $fontmedium: $fontsmall + 5;
 $fontlarge: $fontsmall + 10;
+
+//mixin
+
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+//map
+
+$icon: (
+    github: #3e4143,
+    linkedin: #0033ff,
+    tw: #00ffff;
+)
+@each $nombreRedes, $colorRedes in $icon {
+   .rs-#{$nombreRedes} {
+    color: $blank;
+    font-size: $fontlarge;
+    transition: 1s;
+    &:hover {
+        color: $colorRedes;
+    }
+   }
+    
+}
+ 

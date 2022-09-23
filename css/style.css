@@ -21,7 +21,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   writing-mode: horizontal-tb;
-  background-image: url("/assets/img/asss.jpg");
+  background: #000;
   background-position: 50%; }
 
 h1 {
@@ -66,12 +66,31 @@ h1 {
 p {
   line-height: 2; }
 
-footer h6 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: end;
-  margin: 30px 30px; }
+.footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: column; }
+  .footer .footer__container1 .footer__container1-title {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold; }
+  .footer .footer__container1 .footer__container1-redes {
+    display: flex;
+    justify-content: center; }
+    .footer .footer__container1 .footer__container1-redes .rs {
+      padding: 0 30px; }
+  .footer .foooter__container2 {
+    text-align: center;
+    color: #fff; }
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 10px; }
+  .media__imglogoder {
+    display: none; }
+  footer h6 {
+    font-size: 10px; } }
 
 header {
   display: flex;
@@ -184,140 +203,7 @@ header {
       padding: 0 100px;
       font-size: 17px; }
 
-.discos1 {
-  margin: 100px 70px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-size: 17px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1 fr 1fr; }
-  .discos1 .eminemshow {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .discos1 .eminemshow__text {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 30px;
-    color: #fff; }
-  .discos1 .eminemshow__spo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-right: 50px; }
-  .discos1 .infinite {
-    grid-column: 3/4;
-    grid-row: 2/3; }
-  .discos1 .infinite__text {
-    grid-column: 3/5;
-    grid-row: 1/2;
-    color: #fff; }
-  .discos1 .infinite__spo {
-    grid-column: 4/5;
-    grid-row: 2/3; }
-
-.discos2 {
-  font-size: 17px;
-  margin: 100px 70px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1 fr 1fr; }
-  .discos2 .mmlp {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .discos2 .mmlp__text {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 30px;
-    color: #fff; }
-  .discos2 .mmlp__spo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-right: 50px; }
-  .discos2 .slimshady {
-    grid-column: 3/4;
-    grid-row: 2/3; }
-  .discos2 .slimshady__text {
-    grid-column: 3/5;
-    grid-row: 1/2;
-    margin: 30px;
-    color: #fff; }
-  .discos2 .slimshady__spo {
-    grid-column: 4/5;
-    grid-row: 2/3; }
-
-.discos3 {
-  font-size: 17px;
-  margin: 100px 70px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1 fr 1fr; }
-  .discos3 .encore {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .discos3 .encore__text {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 30px;
-    color: #fff; }
-  .discos3 .encore__spo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-right: 50px; }
-  .discos3 .relapse {
-    grid-column: 3/4;
-    grid-row: 2/3; }
-  .discos3 .relapse__text {
-    grid-column: 3/5;
-    grid-row: 1/2;
-    margin: 30px;
-    color: #fff; }
-  .discos3 .relapse__spo {
-    grid-column: 4/5;
-    grid-row: 2/3; }
-
-.disco__img {
-  width: 100%; }
-
-.carousel-inner {
-  width: 100%;
-  max-height: 500px; }
-
-.galVideos {
-  display: flex;
-  justify-content: center; }
-  .galVideos .gal__vid {
-    margin: 80px; }
-
-.text12 {
-  display: flex;
-  margin: 50px; }
-  .text12 .text1__bio {
-    margin: 0px 70px;
-    line-height: 3.5;
-    color: #fff; }
-
-.link {
-  text-align: center;
-  margin: 20px;
-  padding: 15px; }
-  .link .link__wiki {
-    list-style-type: none;
-    text-decoration: none;
-    color: #fff; }
-
-.iframe {
-  display: flex;
-  margin: 50px;
-  justify-content: center; }
-  .iframe .iframe__video {
-    width: 900px;
-    height: 450px; }
-
 @media (max-width: 1024px) {
-  body {
-    font-size: 10px; }
-  .media__imglogoder {
-    display: none; }
   .section1 {
     display: flex;
     flex-direction: column;
@@ -347,11 +233,152 @@ header {
     height: 300px; }
   .parrafoFinal {
     margin-top: 15px;
-    font-size: 10px; }
-  footer h6 {
-    font-size: 10px; }
-  /* MEDIA PAGINA DISCOGRAFIA */
-  .discos1 {
+    font-size: 10px; } }
+
+@media (max-width: 768px) {
+  .img3__class {
+    width: 400px;
+    height: 300px; } }
+
+@media (max-width: 480px) {
+  .img__12 {
+    width: 250px;
+    height: 250px; }
+  .text1 {
+    margin: 30px 50px; }
+  .text2 {
+    margin: 30px 50px; }
+  .img3__class {
+    width: 300px;
+    height: 250px; }
+  .section2__text1 {
+    margin: 20px 50px; }
+  .section2__text12 {
+    padding: 0; }
+  .imgsection3 {
+    width: 300px;
+    height: 250px; } }
+
+@media (max-width: 320px) {
+  .img__12 {
+    width: 200px;
+    height: 200px; }
+  .text1__class {
+    font-size: 8px; }
+  .img3__class {
+    width: 200px;
+    height: 200px; }
+  .section2 {
+    margin: 30px 0px; }
+  .section2__title {
+    margin-bottom: 5px; }
+  .section2__text12 {
+    font-size: 8px;
+    padding: 0;
+    margin: 5px 50px; }
+  .imgsection3 {
+    width: 200px;
+    height: 200px; }
+  .spotify {
+    width: 200px;
+    height: 200px; }
+  .parrafoFinal {
+    padding: 30px; } }
+
+.discos1, .discos2, .discos3 {
+  margin: 100px 70px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 17px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1 fr 1fr; }
+  .discos1 .eminemshow, .discos2 .eminemshow, .discos3 .eminemshow {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .discos1 .eminemshow__text, .discos2 .eminemshow__text, .discos3 .eminemshow__text {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 30px;
+    color: #fff; }
+  .discos1 .eminemshow__spo, .discos2 .eminemshow__spo, .discos3 .eminemshow__spo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 50px; }
+  .discos1 .infinite, .discos2 .infinite, .discos3 .infinite {
+    grid-column: 3/4;
+    grid-row: 2/3; }
+  .discos1 .infinite__text, .discos2 .infinite__text, .discos3 .infinite__text {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    color: #fff; }
+  .discos1 .infinite__spo, .discos2 .infinite__spo, .discos3 .infinite__spo {
+    grid-column: 4/5;
+    grid-row: 2/3; }
+
+.discos2 .mmlp {
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.discos2 .mmlp__text {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 30px;
+  color: #fff; }
+
+.discos2 .mmlp__spo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-right: 50px; }
+
+.discos2 .slimshady {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+.discos2 .slimshady__text {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  margin: 30px;
+  color: #fff; }
+
+.discos2 .slimshady__spo {
+  grid-column: 4/5;
+  grid-row: 2/3; }
+
+.discos3 .encore {
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.discos3 .encore__text {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 30px;
+  color: #fff; }
+
+.discos3 .encore__spo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-right: 50px; }
+
+.discos3 .relapse {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+.discos3 .relapse__text {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  margin: 30px;
+  color: #fff; }
+
+.discos3 .relapse__spo {
+  grid-column: 4/5;
+  grid-row: 2/3; }
+
+.disco__img {
+  width: 100%; }
+
+@media (max-width: 1024px) {
+  .discos1, .discos2, .discos3 {
     display: flex;
     flex-direction: column; }
   .eminemshow__text {
@@ -386,41 +413,9 @@ header {
     text-align: center; }
   .disco__img {
     width: 400px;
-    height: 400px; }
-  /* MEDIA PARA PAGINA BIO */
-  .text12 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .text1__bio {
-    font-size: 13px;
-    margin: 0; }
-  .img1__bio {
-    width: 700px;
-    height: 400px; }
-  .iframe__video {
-    width: 700px;
-    height: 400px; }
-  /* PAGINA GALERIA  */
-  .galVideos {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-@media (max-width: 768px) {
-  .img3__class {
-    width: 400px;
-    height: 300px; }
-  /* PAGINA BIOGRAFIA */
-  .text1__bio {
-    font-size: 13px; }
-  .img1__bio {
-    width: 500px; }
-  .iframe__video {
-    width: 500px; } }
+    height: 400px; } }
 
 @media (max-width: 600px) {
-  /* PAGINA DISCOGRAFIA */
   .eminemshow__text {
     margin: 5px 50px; }
   .infinite__text {
@@ -432,39 +427,9 @@ header {
   .encore__text {
     margin: 5px 50px; }
   .relapse__text {
-    margin: 5px 50px; }
-  /* PAGINA BIOGRAFIA  */
-  .text1__bio {
-    font-size: 10px; }
-  .img1__bio {
-    margin-top: 15px;
-    width: 400px; }
-  .iframe__video {
-    width: 400px; }
-  /* PAGINA GALERIA */
-  .gal__vid {
-    width: 300px;
-    height: 300px; } }
+    margin: 5px 50px; } }
 
 @media (max-width: 480px) {
-  .img__12 {
-    width: 250px;
-    height: 250px; }
-  .text1 {
-    margin: 30px 50px; }
-  .text2 {
-    margin: 30px 50px; }
-  .img3__class {
-    width: 300px;
-    height: 250px; }
-  .section2__text1 {
-    margin: 20px 50px; }
-  .section2__text12 {
-    padding: 0; }
-  .imgsection3 {
-    width: 300px;
-    height: 250px; }
-  /* PAGINA DISCOGRAFIA */
   .disco__img {
     display: none; }
   .eminemshow__text {
@@ -478,44 +443,9 @@ header {
   .encore__text {
     margin: 5px 10px; }
   .relapse__text {
-    margin: 5px 10px; }
-  /* PAGINA BIOGRAFIA */
-  .text1__bio {
-    margin-top: 0;
-    line-height: 1.5; }
-  .img1__bio {
-    width: 300px;
-    height: 300px; }
-  .iframe__video {
-    width: 300px;
-    height: 300px; } }
+    margin: 5px 10px; } }
 
 @media (max-width: 320px) {
-  .img__12 {
-    width: 200px;
-    height: 200px; }
-  .text1__class {
-    font-size: 8px; }
-  .img3__class {
-    width: 200px;
-    height: 200px; }
-  .section2 {
-    margin: 30px 0px; }
-  .section2__title {
-    margin-bottom: 5px; }
-  .section2__text12 {
-    font-size: 8px;
-    padding: 0;
-    margin: 5px 50px; }
-  .imgsection3 {
-    width: 200px;
-    height: 200px; }
-  .spotify {
-    width: 200px;
-    height: 200px; }
-  .parrafoFinal {
-    padding: 30px; }
-  /* PAGINA DISCOGRAFIA  */
   .disco__img {
     display: inline;
     width: 150px;
@@ -550,3 +480,92 @@ header {
     margin-bottom: 30px; }
   .relapse__spo {
     display: none; } }
+
+.carousel-inner {
+  width: 100%;
+  max-height: 500px; }
+
+.galVideos {
+  display: flex;
+  justify-content: center; }
+  .galVideos .gal__vid {
+    margin: 80px; }
+
+@media (max-width: 1024px) {
+  .galVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 600px) {
+  .gal__vid {
+    width: 300px;
+    height: 300px; } }
+
+.text12 {
+  display: flex;
+  margin: 50px; }
+  .text12 .text1__bio {
+    margin: 0px 70px;
+    line-height: 3.5;
+    color: #fff; }
+
+.link {
+  text-align: center;
+  margin: 20px;
+  padding: 15px; }
+  .link .link__wiki {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff; }
+
+.iframe {
+  display: flex;
+  margin: 50px;
+  justify-content: center; }
+  .iframe .iframe__video {
+    width: 900px;
+    height: 450px; }
+
+@media (max-width: 1024px) {
+  .text12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .text1__bio {
+    font-size: 13px;
+    margin: 0; }
+  .img1__bio {
+    width: 700px;
+    height: 400px; }
+  .iframe__video {
+    width: 700px;
+    height: 400px; } }
+
+@media (max-width: 768px) {
+  .text1__bio {
+    font-size: 13px; }
+  .img1__bio {
+    width: 500px; }
+  .iframe__video {
+    width: 500px; } }
+
+@media (max-width: 600px) {
+  .text1__bio {
+    font-size: 10px; }
+  .img1__bio {
+    margin-top: 15px;
+    width: 400px; }
+  .iframe__video {
+    width: 400px; } }
+
+@media (max-width: 480px) {
+  .text1__bio {
+    margin-top: 0;
+    line-height: 1.5; }
+  .img1__bio {
+    width: 300px;
+    height: 300px; }
+  .iframe__video {
+    width: 300px;
+    height: 300px; } }

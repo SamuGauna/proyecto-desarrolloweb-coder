@@ -11,3 +11,18 @@
         @extend %sombra;
     }
 }
+
+
+@media (max-width: 1024px) {
+    .galVideos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .gal__vid {
+        width: 300px;
+        height: 300px;
+    }
+}
