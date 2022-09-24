@@ -34,22 +34,7 @@ $fontlarge: $fontsmall + 10;
     height: $alto;
 }
 
-//map
 
-$icon: (
-    github: #3e4143,
-    linkedin: #0033ff,
-    tw: #00ffff;
-)
-@each $nombreRedes, $colorRedes in $icon {
-   .rs-#{$nombreRedes} {
-    color: $blank;
-    font-size: $fontlarge;
-    transition: 1s;
-    &:hover {
-        color: $colorRedes;
-    }
-   }
-    
-}
+
+
  

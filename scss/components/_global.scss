@@ -7,12 +7,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     writing-mode: horizontal-tb;
-//     background-image: url("/assets/img/asss.jpg");
-<<<<<<< HEAD
+        //     background-image: url("/assets/img/asss.jpg");
         background: $black;
-=======
-	background: $black;
->>>>>>> 7744fc8efe6ed7400cc2814bf1efb2fd4aed7957
     background-position: 50%;
 }
 h1{
@@ -64,30 +60,7 @@ p{
 }
 
 
-.footer {
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    .footer__container1 {
-        .footer__container1-title{
-                text-align: center;
-                color: $blank;
-                font-size: $fontmedium;
-                font-weight: bold;
-        }
-        .footer__container1-redes {
-                display: flex;
-                justify-content: center;
-                .rs {
-                        padding: 0 30px;
-                }
-        }
-    }
-    .foooter__container2 {
-        text-align: center;
-        color: $blank;
-    }
-}
+
 
 
 

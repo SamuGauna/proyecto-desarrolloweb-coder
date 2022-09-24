@@ -1,0 +1,49 @@
+.footer {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(170,35,35,1) 50%, rgba(15,14,14,1) 90%);
+    .footer__container1 {
+        .footer__container1-title{
+                text-align: center;
+                color: $blank;
+                font-size: $fontmedium;
+                font-weight: bold;
+                margin-top: 30px;
+        }
+        .footer__container1-redes {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            .rs {
+                padding: 0 30px;
+            }
+            $icon: (
+                github: #3e4143,
+                linkedin: #0033ff,
+                tw: #3bc1ff,
+            );
+            @each $nombreRedes, $colorRedes in $icon {
+                .rs-#{$nombreRedes} {
+                 color: $blank;
+                 font-size: $fontlarge;
+                 transition: 1s;
+                 &:hover {
+                     color: $colorRedes;
+                 }
+                }
+             }
+
+
+        }
+    }
+    .foooter__container2 {
+        text-align: center;
+        color: $blank;
+        margin-bottom: 30px;
+    }
+    
+}
+
+    
