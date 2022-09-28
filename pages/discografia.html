@@ -14,135 +14,99 @@
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <!-- <nav class="navbar bg-light Offcanvas navbarfixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar">
         <div class="container-fluid">
-            <a class="navbar-brand row" href="../index.html">
-                <img class="imgLogoIzq col-md-1" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end nav__background__img " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel">EMINEM</h5>
-                    <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold text-white" aria-current="page" href="bio.html">Bio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text-white" href="opinion.html">Tu opinion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text-white" href="discografia.html">Discografia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold text-white" href="galeria.html">Galeria</a>
-                        </li>
-                    </ul>                      
-                </div>
-            </div>
-        </div>
-    </nav> -->
-    <header> 
-        <div>
-         <a href="../index.html">
+          <a class="navbar-brand" href="../index.html">
             <img class="imgLogoIzq" src="../assets/img/izquierda-_3_.svg" alt="Logo izquierda">
-         </a>   
-        </div>
-        <nav>                            
-            <ul>                    
-                <li>
-                    <a href="bio.html">Bio</a>
-                </li>
-                <li>
-                    <a href="opinion.html">Tu opinion</a>
-                </li>
-                <li>
-                    <a href="discografia.html">Discografia</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galeria</a>
-                </li>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse div_nav" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="opinion.html">Opinión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="discografia.html">Discografia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeria.html">Galeria</a>
+              </li>
             </ul>
-        </nav>
-        <div class="media__imglogoder">
-            <img class="imgLogoIzq" src="../assets/img/derecha2.svg" alt="logo derecha">
+          </div>
         </div>
-    </header>
+      </nav>
     <main>
         <div>
             <h1>Discografia</h1>
         </div>
-        <section class="discos1">
+        <section class="containerdiscos1">
             <div class="eminemshow">
                 <a href="https://es.wikipedia.org/wiki/The_Eminem_Show" target="blank">
-                    <img class="disco__img" src="https://i.pinimg.com/564x/e8/74/b5/e874b537549cc7ab8904d457d25514b4.jpg" alt="eminemshow"/>
+                    <img class="disco__img" src="../assets/img/discografias/eminemshow.jpg" alt="eminemshow"/>
                 </a>
-            </div>
-            <div class="eminemshow__text">
-                <p>Fue el álbum musical más vendido ese año en todo el mundo con 22 millones de copias, el primer sencillo, y el más exitoso</p>
-            </div>
-            <div class="eminemshow__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:2cWBwpqMsDJC1ZUwz813lo" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
             <div class="infinite">
                 <a href="https://es.wikipedia.org/wiki/Infinite_(%C3%A1lbum_de_Eminem)" target="blank">
-                    <img class="disco__img" src="https://undiaundisco.files.wordpress.com/2013/11/eminem-1996-infinite.jpg" alt="disco infinite"/>
+                    <img class="disco__img" src="../assets/img/discografias/infinite.jpg" alt="infinite"/>
                 </a>
             </div>
-            <div class="infinite__text">
-                <p>Se lanzaron copias físicas de "Infinite" en cassette y vinilo, y Eminem vendió las copias desde el maletero de su coche en Detroit.</p>
-            </div>
-            <div class="infinite__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:0FQ1ab1KzaOpZWZBFNNpzP" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </section>
-        <section class="discos2">
             <div class="mmlp">
                 <a href="https://es.wikipedia.org/wiki/The_Marshall_Mathers_LP" target="blank">
-                    <img class="disco__img" src="https://static.qobuz.com/images/covers/92/62/0060694906292_600.jpg" alt="disco mmlp"/>
+                    <img class="disco__img" src="../assets/img/discografias/mmlp.jpg" alt="mmlp"/>
                 </a>
             </div>
-            <div class="mmlp__text">
-                <p>The Marshall Mathers LP es considerado por la crítica como uno de los mejores trabajos de la década de 2000.</p>
-            </div>
-            <div class="mmlp__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:6t7956yu5zYf5A829XRiHC" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="slimshady">
-                <a href="https://es.wikipedia.org/wiki/ The_Slim_Shady_LP" target="blank"><img class="disco__img" src="https://http2.mlstatic.com/D_NQ_NP_837551-MLA29356083124_022019-O.jpg" alt="disco slim shady"/>
-                </a>
-            </div>
-            <div class="slimshady__text">
-                <p>Contiene representaciones caricaturescas de violencia y un uso intensivo de blasfemias, que Eminem describió como al estilo de una película de terror. </p>
-            </div>
-            <div class="slimshady__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:0vE6mttRTBXRe9rKghyr1l" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+            
         </section>
-        <section class="discos3">
-            <div class="encore">
-                <a href="https://es.wikipedia.org/wiki/Encore_(%C3%A1lbum_de_Eminem)" target="blank"><img class="disco__img" src="https://m.media-amazon.com/images/I/51VIR8u5aFL.jpg" alt="disco encore"/>
+        <section class="containerdiscos2">
+            <div class="slimshadylp">
+                <a href="https://es.wikipedia.org/wiki/ The_Slim_Shady_LP" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/slimshadylp.jpg" alt="">
                 </a>
             </div>
-            <div class="encore__text">
-                <p>Encore se caracteriza por tener canciones más humorísticas, en este disco muestra su lado más gangsta.</p>
-            </div>
-            <div class="encore__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:7tsXPtLqhab1zWeubbf6JH" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+            <div class="encore">
+                <a href="https://es.wikipedia.org/wiki/Encore_(%C3%A1lbum_de_Eminem)" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/encore.jpg" alt="">
+                </a>
             </div>
             <div class="relapse">
-                <a href="https://es.wikipedia.org/wiki/Relapse" target="blank"><img class="disco__img" src="https://http2.mlstatic.com/D_NQ_NP_893868-MLA46683569223_072021-O.jpg" alt="disco relapse"/>
+                <a href="https://es.wikipedia.org/wiki/Relapse" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/relapse.jpg" alt="">
                 </a>
             </div>
-            <div class="relapse__text">
-                <p> En la portada del disco podemos ver la imagen de la cara de Eminem formada por cientos de pastillas y una etiqueta en forma de receta.</p>
+            
+        </section>
+        <section class="containerdiscos3">
+            <div class="mmlp2">
+                <a href="https://es.wikipedia.org/wiki/The_Marshall_Mathers_LP_2" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/mmlp2.jpg" alt="">
+                </a>
             </div>
-            <div class="relapse__spo">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:album:7h2OEj0ifXb3UdgvTmCqfY" width="250" height="260" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="revival">
+                <a href="https://es.wikipedia.org/wiki/Revival_(%C3%A1lbum_de_Eminem)" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/revival.jpg" alt="">
+                </a>
+            </div>
+            <div class="kamikaze">
+                <a href="https://es.wikipedia.org/wiki/Kamikaze_(%C3%A1lbum_de_Eminem)" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/kamikaze.jpg" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="containerdiscos4">
+            <div class="murdered">
+                <a href="https://en.wikipedia.org/wiki/Music_to_Be_Murdered_By" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/murdered.jpg" alt="">
+                </a>
+            </div>
+            <div class="recovery">
+                <a href="https://es.wikipedia.org/wiki/Recovery_(%C3%A1lbum_de_Eminem)" target="blank">
+                    <img class="disco__img" src="../assets/img/discografias/recovery.JPG" alt="">
+                </a>
             </div>
         </section>
     </main>

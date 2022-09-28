@@ -1,11 +1,7 @@
 // .navbar {
 //     background: linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(87,16,16,1) 20%, rgba(226,167,167,1) 49%, rgba(103,38,38,1) 80%, rgba(15,14,14,1) 93%);
 // }
-// .imgLogoIzq {
-//     width: 100px;
-//     height: 100px;
-//     border-radius: 15px;
-// }
+// 
 // .nav__background__img {
 //     background-image: url("/assets/img/BACK_NAV2.jpg");
 //     background-size: cover;
@@ -20,41 +16,35 @@
 //         transition: 1s;
 //     }
 // }
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(87,16,16,1) 20%, rgba(226,167,167,1) 49%, rgba(103,38,38,1) 80%, rgba(15,14,14,1) 93%);
-    > nav ul {    
-        list-style-type: none;
-        > li {
-            font-size: $fontsmall;
-            font-weight: bold;    
-            display: inline-block;
-            margin: 20px;
-            padding: 15px; 
-            background-color: $black;
-            border-radius: 5px;
-            box-shadow: 0px 0px 70px 20px rgba(0, 0, 0, 0.6);
-            color: $blank;
+.navbar {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,11,11,1) 18%, rgba(172,0,0,1) 39%, rgba(255,0,0,1) 50%, rgba(163,0,0,1) 61%, rgba(69,15,15,1) 82%, rgba(0,0,0,1) 100%);
+    .nav-item {
+        padding: 0 15px;
+        .nav-link {
+            color: $black;
+            font-weight: bold;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.5);
                 transition: 1s;
-            }
-            > a {
-                text-decoration: none;
+                color: $blank;
             }
         }
+    
     }
+}
+.div_nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .imgLogoIzq {
     width: 150px;
     height: 150px;
-    border-radius: 15px;
+    margin-left: 30px;
+    &:hover {
+        transform: scale(1.5);
+        transition: 1.5s;
+    }
  }
 
-// .li__nav {
-//     transition: transform 1s;
-// }
