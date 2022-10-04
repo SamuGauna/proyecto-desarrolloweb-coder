@@ -7,10 +7,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
     writing-mode: horizontal-tb;
-    background-color: #000;
+    background-color: rgb(11, 11, 11);
 }
 h1{
     font-size: $fontlarge;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     color: $blank;
